@@ -1,0 +1,279 @@
+// ---------------VARIABLES---------------------
+
+@creamColor: rgb(255, 255, 241);
+
+
+.blackBackground(){
+  background-color: rgba(4, 4, 4, 0.69);
+}
+
+.right-side(){
+  position: relative;
+  flex: right;
+}
+
+.left-side(){
+  position: relative;
+  flex: left;
+}
+
+.center-in-row(){
+  display: flex;
+  align-items: center;
+}
+
+.fixed-bottom-text(){
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  background-color: rgba(4, 4, 4, 0.35);
+}
+
+
+
+
+
+// -------------- CSS STYLING ------------------
+
+html{
+  background: url('../images/chicago-background-small 2.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position-x: 0;
+}
+
+body {
+  font-family: 'Fira Mono', sans-serif;
+  color: @creamColor;
+}
+
+.red-word{
+  color: rgb(238, 85, 85)!important;
+}
+
+.mainwords{
+  margin: 200px 200px 0px 0px;
+  text-align: right;
+}
+
+.button-collapse {
+  .blackBackground;
+}
+
+.chicago-icon {
+  height: 50px;
+  width: 50px;
+  color: white;
+  margin-right: 15px;
+}
+
+
+.initial-break {
+  height: 500px;
+  width: 100%;
+}
+
+.break {
+  height: 200px;
+  width: 100%;
+}
+
+#about {
+  .blackBackground;
+  padding: 40px;
+  list-style-type: none;
+}
+
+
+.about-info-section{
+  margin-top: 30px;
+}
+
+.icon-stats{
+  margin-top: 100px;
+}
+
+.about-pic-contact{
+  .center-in-row;
+}
+
+
+.about-icon{
+  margin-right: 5px;
+}
+.about-words {
+  .right-side;
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.email-profile-line{
+  .center-in-row;
+}
+
+.phone-profile-line{
+  .center-in-row;
+}
+
+
+#logo-pic {
+  height: 200px;
+  width: 200px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+  float: left;
+  margin-right: 20px;
+}
+
+
+
+// .container {
+//   display: flex;
+//   align-items: center;
+// }
+
+#causes{
+  .blackBackground;
+  height: 750px;
+  padding: 20px;
+}
+
+.causes-text{
+  .red-word;
+  padding: 20px;
+}
+
+
+#contact{
+  .blackBackground;
+}
+
+.banner-top {
+  width: 100%;
+}
+
+.tgfc {
+  font-family: 'Unica One', cursive !important;
+  margin-bottom: 10px;
+}
+.left-header {
+  margin-bottom: 15px;
+}
+.parallax {
+  height: 150px;
+}
+p {
+  text-align: justify;
+}
+
+
+
+.media-container-about {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.media-icons{
+  margin-right: 10px;
+}
+
+.media-container-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#ref-titles {
+  margin-top: 15px;
+}
+
+.footer-blurb{
+  margin: 0px 75px;
+}
+.projects {
+  height: 300px;
+  width: 300px;
+  border-radius: 4px;
+  border: solid 3px rgba(232, 232, 232, 0.96);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sytycs {
+  font-family: 'Satisfy', cursive, serif !important;
+}
+.chomp {
+  font-family: 'Special Elite', serif !important;
+}
+.whowhatwhere {
+  font-family: 'Economica', sans-serif !important;
+}
+.card {
+  text-align: center;
+  background-color: rgba(4, 4, 4, 0.75);
+  border-radius: 4px;
+  height: 700px;
+}
+
+.porfolio-links{
+  .center-in-row;
+  justify-content: center;
+}
+
+.title-header{
+  .blackBackground;
+  text-align: center;
+  padding: 10px
+}
+
+.tagline{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title{
+  text-align: center;
+}
+
+.carousel-text{
+  .fixed-bottom-text;
+  padding: 20px;
+}
+
+.carousel-image{
+  background-position-y: 0!important;
+  top: 2px;
+}
+
+.slider{
+  margin-bottom: 30px;
+  height: 400px!important;
+}
+
+.slides{
+  height: 400px!important;
+  margin-bottom: 30px;
+}
+
+
+
+//MEDIA QUERIES
+@media only screen and (max-width: 992px) {
+  .card{
+    height: 660px!important;
+  }
+  .icon-stats{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 0px;
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 671px) {
+  .mainwords{
+    margin: 100px 100px 0px 0px;
+  }
+}
