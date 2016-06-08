@@ -15,4 +15,10 @@ $( document ).ready(function(){
 	    });
 	});
 
+
+});
+
+
+$(window).scroll(function(){
+  $(".mainwords").css("opacity", 1 - $(window).scrollTop() / 250);
 });
